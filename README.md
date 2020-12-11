@@ -1,4 +1,4 @@
-# Laravel Favicon 
+# Laravel Favicon (test)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/beyondcode/laravel-favicon.svg?style=flat-square)](https://packagist.org/packages/beyondcode/laravel-favicon)
 [![Build Status](https://img.shields.io/travis/beyondcode/laravel-favicon/master.svg?style=flat-square)](https://travis-ci.org/beyondcode/laravel-favicon)
@@ -32,7 +32,12 @@ To make use of this package, make use of the `favicon` helper function that this
 You can simply wrap the function around your favicon icon names, like this:
 
 ```html
-<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon(asset('favicon-32x32.png')) }}">
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{{ favicon(asset('favicon-32x32.png')) }}"
+/>
 
 <link rel="shortcut icon" href="{{ favicon('favicon.ico') }}" />
 ```
@@ -136,11 +141,11 @@ The `shouldGenerateFavicon` method can be used to determine if a custom favicon 
 
 ## FAQ
 
-- My ICO files are not working, why?
+-   My ICO files are not working, why?
 
 In order to modify ICO files, you need the Imagick PHP library installed and enabled in your `config/favicon.php` file.
 
-- Is there a performance impact when I'm using this package?
+-   Is there a performance impact when I'm using this package?
 
 No - the default generator only modifies your favicon when the specified environment is enabled. This means, that production environments only see the static assets that you already have.
 
@@ -158,8 +163,8 @@ If you discover any security related issues, please email marcel@beyondco.de ins
 
 ## Credits
 
-- [Marcel Pociot](https://github.com/mpociot)
-- [All Contributors](../../contributors)
+-   [Marcel Pociot](https://github.com/mpociot)
+-   [All Contributors](../../contributors)
 
 ## License
 
